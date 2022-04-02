@@ -18,7 +18,7 @@ public class Server {
             System.out.println("Сервер запущен");
             while (true) {
                 clientSocket = serverSocket.accept();
-                ClientHandler client = new ClientHandler();
+                ClientHandler client = new ClientHandler(clientSocket, this);
                 clients.add(client);
                 new Thread(client).start();
             }
@@ -34,7 +34,16 @@ public class Server {
                 ex.printStackTrace();
             }
         }
+    }
 
+    public void sendMessageToAllClients(String message) {
+        for (ClientHandler client : clients) {
+            client.sendMessage(message);
+        }
+    }
+
+    public void removeClient(ClientHandler client) {
+        clients.remove(client);
     }
 
 }
