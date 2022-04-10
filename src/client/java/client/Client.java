@@ -7,8 +7,10 @@ import java.awt.event.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 public class Client extends JFrame {
+    private final Logger logger = Logger.getLogger(Client.class);
     // адрес сервера
     private static final String SERVER_HOST = "localhost";
     // порт
@@ -37,6 +39,7 @@ public class Client extends JFrame {
             clientSocket = new Socket(SERVER_HOST, SERVER_PORT);
             inMessage = new Scanner(clientSocket.getInputStream());
             outMessage = new PrintWriter(clientSocket.getOutputStream());
+            logger.debug(String.format("Client has been connected to %s:%s", SERVER_HOST, SERVER_PORT));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 public class Server {
+    private final Logger logger = Logger.getLogger(Server.class);
     // порт, прослушивающий сервер
     private static final int PORT = 65500;
     // лист, в который будут добавляться клиенты, подключившиеся к серверу
@@ -14,6 +17,7 @@ public class Server {
         Socket clientSocket = null;
         ServerSocket serverSocket = null;
         try {
+            logger.debug("Server is up");
             serverSocket = new ServerSocket(PORT);
             System.out.println("Сервер запущен");
             while (true) {

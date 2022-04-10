@@ -1,0 +1,6 @@
+DEBUG	2022-04-10 17:49:27,226	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 17:50:53,774	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 17:51:26,381	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 17:52:29,966	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 17:52:34,987	0	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 17:52:35,193	206	client.Client	[main]	Client has been connected to localhost:65500
