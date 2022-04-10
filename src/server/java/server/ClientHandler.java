@@ -1,10 +1,14 @@
 package server;
 
+import client.Client;
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
 public class ClientHandler implements Runnable {
+    private final Logger logger = Logger.getLogger(Client.class);
     private Server server;
     private PrintWriter outMessage;
     private Scanner inMessage;
@@ -30,7 +34,9 @@ public class ClientHandler implements Runnable {
         try {
             while (true) {
                 server.sendMessageToAllClients("Новый участник вошел в чат");
+                logger.debug("New member has entered the chat");
                 server.sendMessageToAllClients("Клиентов в чате " + clientsCount);
+                logger.debug("Clients in the chat: " + clientsCount);
                 break;
             }
 
@@ -58,6 +64,7 @@ public class ClientHandler implements Runnable {
         try {
             outMessage.println(message);
             outMessage.flush();
+            logger.debug(String.format("Message has been sent to the server, %s", message));
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -67,5 +74,6 @@ public class ClientHandler implements Runnable {
         server.removeClient(this);
         clientsCount--;
         server.sendMessageToAllClients("Клиентов в чате " + clientsCount);
+        logger.debug("Clients in the chat: " + clientsCount);
     }
 }

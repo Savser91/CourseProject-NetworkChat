@@ -1,0 +1,2 @@
+SERVER_HOST = localhost
+PORT = 65500

@@ -3,22 +3,23 @@ package server;
 import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
-
+import configuration.ConfigurationServer;
 import org.apache.log4j.Logger;
 
 public class Server {
+    private ConfigurationServer configuration;
     private final Logger logger = Logger.getLogger(Server.class);
     // порт, прослушивающий сервер
-    private static final int PORT = 65500;
     // лист, в который будут добавляться клиенты, подключившиеся к серверу
     private ArrayList<ClientHandler> clients = new ArrayList<>();
 
     public Server() {
+        configuration = new ConfigurationServer();
         Socket clientSocket = null;
         ServerSocket serverSocket = null;
         try {
             logger.debug("Server is up");
-            serverSocket = new ServerSocket(PORT);
+            serverSocket = new ServerSocket(configuration.getPort());
             System.out.println("Сервер запущен");
             while (true) {
                 clientSocket = serverSocket.accept();
@@ -32,6 +33,7 @@ public class Server {
         } finally {
             try {
                 clientSocket.close();
+                logger.debug("Server is off");
                 System.out.println("Сервер остановлен");
                 serverSocket.close();
             } catch (IOException ex) {

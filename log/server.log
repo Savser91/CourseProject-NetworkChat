@@ -4,3 +4,41 @@ DEBUG	2022-04-10 17:51:26,381	0	server.Server	[main]	Server is up
 DEBUG	2022-04-10 17:52:29,966	0	server.Server	[main]	Server is up
 DEBUG	2022-04-10 17:52:34,987	0	client.Client	[main]	Client has been connected to localhost:65500
 DEBUG	2022-04-10 17:52:35,193	206	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 19:48:22,144	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 19:48:26,292	0	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 19:48:26,296	4152	client.Client	[Thread-0]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 19:48:26,308	4164	client.Client	[Thread-0]	New member has entered the chat
+DEBUG	2022-04-10 19:48:26,315	4171	client.Client	[Thread-0]	Message has been sent to the server, Клиентов в чате 1
+DEBUG	2022-04-10 19:48:26,316	4172	client.Client	[Thread-0]	Clients in the chat: 1
+DEBUG	2022-04-10 19:48:26,506	214	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 19:48:26,508	4364	client.Client	[Thread-1]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 19:48:26,511	4367	client.Client	[Thread-1]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 19:48:26,512	4368	client.Client	[Thread-1]	New member has entered the chat
+DEBUG	2022-04-10 19:48:26,514	4370	client.Client	[Thread-1]	Message has been sent to the server, Клиентов в чате 2
+DEBUG	2022-04-10 19:48:26,514	4370	client.Client	[Thread-1]	Message has been sent to the server, Клиентов в чате 2
+DEBUG	2022-04-10 19:48:26,514	4370	client.Client	[Thread-1]	Clients in the chat: 2
+DEBUG	2022-04-10 19:48:36,949	14805	client.Client	[Thread-1]	Message has been sent to the server, Клиент2: Сообщение
+DEBUG	2022-04-10 19:48:36,950	14806	client.Client	[Thread-1]	Message has been sent to the server, Клиент2: Сообщение
+DEBUG	2022-04-10 19:48:50,793	28649	client.Client	[Thread-0]	Message has been sent to the server, Клиент1 : Сообщение от клиента 1
+DEBUG	2022-04-10 19:48:50,794	28650	client.Client	[Thread-0]	Message has been sent to the server, Клиент1 : Сообщение от клиента 1
+DEBUG	2022-04-10 19:49:25,187	63043	client.Client	[Thread-0]	Message has been sent to the server, Клиент1  вышел из чата!
+DEBUG	2022-04-10 19:49:25,187	63043	client.Client	[Thread-0]	Message has been sent to the server, Клиент1  вышел из чата!
+DEBUG	2022-04-10 19:49:25,296	63152	client.Client	[Thread-0]	Message has been sent to the server, ##session##end##
+DEBUG	2022-04-10 19:49:25,298	63154	client.Client	[Thread-0]	Message has been sent to the server, ##session##end##
+DEBUG	2022-04-10 20:08:42,937	0	server.Server	[main]	Server is up
+DEBUG	2022-04-10 20:08:46,888	3	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 20:08:46,890	3953	client.Client	[Thread-0]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 20:08:46,890	3953	client.Client	[Thread-0]	New member has entered the chat
+DEBUG	2022-04-10 20:08:46,901	3964	client.Client	[Thread-0]	Message has been sent to the server, Клиентов в чате 1
+DEBUG	2022-04-10 20:08:46,902	3965	client.Client	[Thread-0]	Clients in the chat: 1
+DEBUG	2022-04-10 20:08:47,083	198	client.Client	[main]	Client has been connected to localhost:65500
+DEBUG	2022-04-10 20:08:47,088	4151	client.Client	[Thread-1]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 20:08:47,088	4151	client.Client	[Thread-1]	Message has been sent to the server, Новый участник вошел в чат
+DEBUG	2022-04-10 20:08:47,089	4152	client.Client	[Thread-1]	New member has entered the chat
+DEBUG	2022-04-10 20:08:47,091	4154	client.Client	[Thread-1]	Message has been sent to the server, Клиентов в чате 2
+DEBUG	2022-04-10 20:08:47,095	4158	client.Client	[Thread-1]	Message has been sent to the server, Клиентов в чате 2
+DEBUG	2022-04-10 20:08:47,096	4159	client.Client	[Thread-1]	Clients in the chat: 2
+DEBUG	2022-04-10 20:08:51,274	8337	client.Client	[Thread-1]	Message has been sent to the server, Участник вышел из чата, так и не представившись!
+DEBUG	2022-04-10 20:08:51,275	8338	client.Client	[Thread-1]	Message has been sent to the server, Участник вышел из чата, так и не представившись!
+DEBUG	2022-04-10 20:08:51,381	8444	client.Client	[Thread-1]	Message has been sent to the server, ##session##end##
+DEBUG	2022-04-10 20:08:51,385	8448	client.Client	[Thread-1]	Message has been sent to the server, ##session##end##
